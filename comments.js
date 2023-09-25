@@ -35,7 +35,7 @@ app.post('/', async (req, res) => {
         name: req.body.name,
         text: req.body.text
     });
-    await comment.save();
+    await comment.save(); 
     res.redirect('/');
 });
 // listen to port
